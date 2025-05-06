@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTU GWA Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">✨ CTU GWA Calculator ✨</h2>
+
+    <div class="table-container">
+      <table class="custom-table" id="subjectsTable">
+        <thead>
+          <tr>
+            <th>📖 Subject</th>
+            <th>📊 Grade</th>
+            <th>📌 Units</th>
+            <th>⚙️ Action</th>
+          </tr>
+        </thead>
+        <tbody id="subjectsBody"></tbody>
+      </table>
+    </div>
+
+    <div class="button-group">
+      <button class="btn btn-add" onclick="addRow()">➕ Add Subject</button>
+      <button class="btn btn-calculate" onclick="calculateGWA()">🧮 Calculate GWA</button>
+      <button class="btn btn-reset" onclick="resetTable()">♻️ Reset</button>
+      <button class="btn btn-export" onclick="exportData()">📥 Export Data</button>
+      <button class="btn btn-dark-mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+
+    <h4 class="result">General Weighted Average: <span id="gwaResult">-</span></h4>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+        </html>
