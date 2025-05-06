@@ -1,0 +1,204 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  transition: background 0.5s, color 0.5s;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  transition: background 0.5s, color 0.5s;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4b0082;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  table-layout: fixed;
+}
+
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+  width: 45%;
+}
+
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  width: 20%;
+}
+
+.custom-table th:nth-child(3),
+.custom-table td:nth-child(3) {
+  width: 15%;
+}
+
+.custom-table th:nth-child(4),
+.custom-table td:nth-child(4) {
+  width: 20%;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 2px solid #4b0082;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.custom-table th {
+  background: #4b0082;
+  color: white;
+  font-weight: bold;
+}
+
+.custom-table input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-add {
+  background: #57cc99;
+  color: white;
+}
+
+.btn-add:hover {
+  background: #45a879;
+}
+
+.btn-calculate {
+  background: #ffcc00;
+  color: white;
+}
+
+.btn-calculate:hover {
+  background: #d9a600;
+}
+
+.btn-reset {
+  background: #ff6b6b;
+  color: white;
+}
+
+.btn-reset:hover {
+  background: #d9534f;
+}
+
+.btn-export {
+  background: #4b89dc;
+  color: white;
+}
+
+.btn-export:hover {
+  background: #357ae8;
+}
+
+.btn-dark-mode {
+  background: #333;
+  color: white;
+}
+
+.btn-dark-mode:hover {
+  background: #222;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.dark-mode {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .container {
+  background: rgba(50, 50, 50, 0.8);
+  color: white;
+}
+
+.dark-mode .custom-table th {
+  background: #444;
+}
+
+.dark-mode .result {
+  color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .custom-table input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .result {
+    font-size: 18px;
+  }
+  }
